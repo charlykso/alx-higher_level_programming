@@ -15,3 +15,6 @@
     - You are not allowed to google anything
     - Whiteboard first
     - This task and all future technical interview prep tasks will include checks for the efficiency of your solution, i.e. is your solution’s runtime fast enough, does your solution require extra memory usage / mallocs, etc.
+### 11. Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
+### 12. Write a script that compiles a Python script file.
+### 13. Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
