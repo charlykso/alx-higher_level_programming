@@ -3,5 +3,7 @@
 for n in range(0, 100):
     if n < 10:
         print("0{},".format(n), end=" ")
-    else:
+    elif n < 99:
         print("{},".format(n), end=" ")
+    else:
+        print("{}".format(n), end=" ")
