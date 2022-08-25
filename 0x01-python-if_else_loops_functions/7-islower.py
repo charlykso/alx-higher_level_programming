@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def nameislower(c):
+def islower(c):
     letter = ord(c)
     if letter >= 97 and letter <= 122:
         return True
