@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-from asyncio import Task
-import sys
 
-
-def main():
+if __name__ == "__main__":
+    import sys
     if len(sys.argv) == 1:
         print("0 arguments.")
     else:
@@ -12,7 +10,3 @@ def main():
         while j < len(sys.argv):
             print("{}: {}".format(j, sys.argv[j]))
             j = j + 1
-
-
-if __name__ == "__main__":
-    main()
