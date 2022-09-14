@@ -3,4 +3,6 @@
 """Define a class Square"""
 
 class Square:
-    pass
+    def __init__(self) -> None:
+        """"initialize a new class"""
+        pass
