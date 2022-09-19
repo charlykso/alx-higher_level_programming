@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Defines a function tht divides all the elements of a matrix
+Defines a function that divides all the elements of a matrix
 """
 
 
