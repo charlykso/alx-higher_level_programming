@@ -28,14 +28,14 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         else:
             self.__width = value
-    
+
     @property
     def height(self):
         """
         Getter for height
         """
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """
