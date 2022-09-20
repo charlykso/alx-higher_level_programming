@@ -5,10 +5,17 @@
 
 class Rectangle:
     """Rectangle class"""
+    counter = 0
     def __init__(self, width=0, height=0):
         """Initialize a new class"""
         self.width = width
         self.height = height
+        type(self).counter += 1
+    
+    def __del__(self):
+        """ Deletes instance of class """
+        print("Bye rectangle...")
+        type(self).counter -= 1
 
     @property
     def width(self):
@@ -68,3 +75,7 @@ class Rectangle:
             return ""
         rect = "\n".join(["#" * self.__width for rows in range(self.__height)])
         return rect
+    
+    def __repr__(self):
+        """ String representation to recreate new instance """
+        return "Rectangle({:d}, {:d})".format(self.width, self.height)
