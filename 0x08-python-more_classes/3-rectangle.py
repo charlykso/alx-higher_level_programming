@@ -62,14 +62,9 @@ class Rectangle:
             return 0
         return (2 * (self.__width + self.__height))
     
-    def my_print(self):
-        """Print the area of a rectangle"""
+    def __str__(self):
+        """ Prints rectangle with #'s """
         if self.__width == 0 or self.__height == 0:
-            print("")
-            return
-
-        [print("") for i in range(0, self.__height)]
-        for i in range(0, self.__width):
-            [print(" ", end="") for j in range(0, self.__height)]
-            [print("#", end="") for k in range(0, self.__width)]
-            print("")
+            return ""
+        rect = "\n".join(["#" * self.__width for rows in range(self.__height)])
+        return rect
