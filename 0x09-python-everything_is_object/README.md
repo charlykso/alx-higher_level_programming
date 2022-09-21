@@ -123,4 +123,55 @@ print(l1)
     Your file should be maximum 3-line long (no documentation needed)
     You are not allowed to import any module
 
-## 20.
+## 20. Is a a tuple? Answer with Yes or No
+
+a = ()
+
+## 21. Is a a tuple? Answer with Yes or No
+
+a = (1, 2)
+
+## 22. Is a a tuple? Answer with Yes or No
+
+a = (1)
+
+## 23. Is a a tuple? Answer with Yes or No
+
+a = (1, )
+
+## 24. What does this script print?
+
+a = (1)
+b = (1)
+a is b
+
+## 25. What does this script print?
+
+a = (1, 2)
+b = (1, 2)
+a is b
+
+## 26. What does this script print?
+
+a = ()
+b = ()
+a is b
+
+## 27. Will the last line of this script print 139926795932424? Answer with Yes or No
+
+>>> id(a)
+139926795932424
+>>> a
+[1, 2, 3, 4]
+>>> a = a + [5]
+>>> id(a)
+
+## 28. Will the last line of this script print 139926795932424? Answer with Yes or No
+
+>>> a
+[1, 2, 3]
+>>> id (a)
+139926795932424
+>>> a += [4]
+>>> id(a)
+
