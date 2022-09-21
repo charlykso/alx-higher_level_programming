@@ -69,4 +69,58 @@ Write the name of the function in the file, without ().
 >>> l2 = l1
 >>> print(l1 == l2)
 
-## 13. 
+## 13. What do these 3 lines print?
+
+>>> l1 = [1, 2, 3]
+>>> l2 = l1
+>>> print(l1 is l2)
+
+## 14. What does this script print?
+
+l1 = [1, 2, 3]
+l2 = l1
+l1.append(4)
+print(l2)
+
+## 15. What does this script print?
+
+l1 = [1, 2, 3]
+l2 = l1
+l1 = l1 + [4]
+print(l2)
+
+## 16. What does this script print?
+
+def increment(n):
+    n += 1
+
+a = 1
+increment(a)
+print(a)
+
+## 17. What does this script print?
+
+def increment(n):
+    n.append(4)
+
+l = [1, 2, 3]
+increment(l)
+print(l)
+
+## 18. What does this script print?
+
+def assign_value(n, v):
+    n = v
+
+l1 = [1, 2, 3]
+l2 = [4, 5, 6]
+assign_value(l1, l2)
+print(l1)
+
+## 19. Write a function def copy_list(l): that returns a copy of a list.
+
+    The input list can contain any type of objects
+    Your file should be maximum 3-line long (no documentation needed)
+    You are not allowed to import any module
+
+## 20.
