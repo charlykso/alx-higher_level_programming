@@ -1,0 +1,44 @@
+[
+    {
+        "label": "Base",
+        "importPath": "models.base",
+        "description": "models.base",
+        "isExtraImport": true,
+        "detail": "models.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "models.base",
+        "description": "models.base",
+        "isExtraImport": true,
+        "detail": "models.base",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 6,
+        "importPath": "models.base",
+        "description": "models.base",
+        "peekOfCode": "class Base:\n    \"\"\"\n    Base class\n    \"\"\"\n    __nb_objects = 0\n    def __init__(self, id=None):\n        \"\"\"\n        Constructor\n        \"\"\"\n        if id is not None:",
+        "detail": "models.base",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "peekOfCode": "class Rectangle(Base):\n    \"\"\"\n    Rectangle class\n    \"\"\"\n    def __init__(self, width, height, x=0, y=0, id=None):\n        \"\"\"\n        Constructor\n        \"\"\"\n        super().__init__(id)\n        self.width = width",
+        "detail": "models.rectangle",
+        "documentation": {}
+    }
+]
