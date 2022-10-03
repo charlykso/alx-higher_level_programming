@@ -112,7 +112,7 @@ class Rectangle(Base):
             for row in range(self.width):
                 print('#', end='')
             print()
-    
+
     def update(self, *args, **kwargs):
         """
         update the class variables
@@ -125,7 +125,7 @@ class Rectangle(Base):
                 self.height = args[2]
                 self.x = args[3]
                 self.y = args[4]
-            except:
+            except BaseException:
                 pass
         else:
             if 'id' in kwargs:
@@ -145,12 +145,12 @@ class Rectangle(Base):
         representation of rectangle
         """
         return {
-			'id': self.id,
-			'width': self.width,
-			'height': self.height,
-			'x': self.x,
-			'y': self.y
-		}
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y
+        }
 
     def __str__(self):
         """

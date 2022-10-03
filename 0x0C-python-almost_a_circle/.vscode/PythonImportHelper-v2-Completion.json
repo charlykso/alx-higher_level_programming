@@ -9,6 +9,23 @@
         "documentation": {}
     },
     {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "models.base",
+        "description": "models.base",
+        "isExtraImport": true,
+        "detail": "models.base",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "models.base",
         "description": "models.base",
@@ -26,14 +43,6 @@
     },
     {
         "label": "Rectangle",
-        "importPath": "rectangle",
-        "description": "rectangle",
-        "isExtraImport": true,
-        "detail": "rectangle",
-        "documentation": {}
-    },
-    {
-        "label": "Rectangle",
         "importPath": "models.rectangle",
         "description": "models.rectangle",
         "isExtraImport": true,
@@ -86,6 +95,46 @@
         "description": "models.rectangle",
         "isExtraImport": true,
         "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "importPath": "models.square",
+        "description": "models.square",
+        "isExtraImport": true,
+        "detail": "models.square",
         "documentation": {}
     },
     {
@@ -93,7 +142,7 @@
         "kind": 6,
         "importPath": "models.base",
         "description": "models.base",
-        "peekOfCode": "class Base:\n    \"\"\"\n    Base class\n    \"\"\"\n    __nb_objects = 0\n    def __init__(self, id=None):\n        \"\"\"\n        Constructor\n        \"\"\"\n        if id is not None:",
+        "peekOfCode": "class Base:\n    '''\n    Base class\n    '''\n    __nb_objects = 0\n    def __init__(self, id=None):\n        '''\n        Constructor\n        '''\n        if id is not None:",
         "detail": "models.base",
         "documentation": {}
     },
@@ -111,7 +160,7 @@
         "kind": 6,
         "importPath": "models.square",
         "description": "models.square",
-        "peekOfCode": "class Square(Rectangle):\n    \"\"\"\n    class square\n    \"\"\"\n    def __init__(self, size, x=0, y=0, id=None):\n        \"\"\"\n        Constructor\n        \"\"\"\n        super().__init__(id, x, y, size, size)\n        self.size = size",
+        "peekOfCode": "class Square(Rectangle):\n    '''\n    Square class inherits from Rectangle\n    '''\n    def __init__(self, size, x=0, y=0, id=None):\n        '''\n        Constructor\n        '''\n        super().__init__(size, size, x, y, id)\n        self.size = size",
         "detail": "models.square",
         "documentation": {}
     }

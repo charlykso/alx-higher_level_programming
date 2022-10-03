@@ -1,41 +1,42 @@
 #!/usr/bin/python3
-"""
-Square that inherits from rectangle
-"""
+'''
+Write the class Square that
+inherits from Rectangle:
+'''
+from models.rectangle import Rectangle
 
-
-from rectangle import Rectangle
 
 class Square(Rectangle):
-    """
-    class square
-    """
+    '''
+    Square class inherits from Rectangle
+    '''
+
     def __init__(self, size, x=0, y=0, id=None):
-        """
+        '''
         Constructor
-        """
-        super().__init__(id, x, y, size, size)
+        '''
+        super().__init__(size, size, x, y, id)
         self.size = size
 
     @property
     def size(self):
-        """
+        '''
         size getter
-        """
-        return self.width    
+        '''
+        return self.width
 
     @size.setter
     def size(self, value):
-        """
+        '''
         size setter
-        """
+        '''
         self.width = value
         self.height = value
 
     def update(self, *args, **kwargs):
-        """
-        variadic arguments
-        """
+        '''
+        Makes args variadic
+        '''
         argc = len(args)
         if argc > 0:
             try:
@@ -49,23 +50,23 @@ class Square(Rectangle):
             if 'id' in kwargs:
                 self.id = kwargs['id']
             if 'size' in kwargs:
-                self.width = kwargs['size']
+                self.size = kwargs['size']
             if 'x' in kwargs:
                 self.x = kwargs['x']
             if 'y' in kwargs:
                 self.y = kwargs['y']
 
     def to_dictionary(self):
-        """
-        to_dictionary that return a dictionary
-        representation of square
-        """
+        '''
+       Pull the parameters out in
+       the function as a dictionary
+        '''
         return {
-			'id': self.id,
-			'size': self.size,
-			'x': self.x,
-			'y': self.y
-		}
+            'id': self.id,
+            'x': self.x,
+            'size': self.size,
+            'y': self.y
+        }
 
     def __str__(self):
         '''
