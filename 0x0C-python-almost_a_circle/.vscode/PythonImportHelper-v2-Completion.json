@@ -17,6 +17,22 @@
     },
     {
         "label": "Rectangle",
+        "importPath": "rectangle",
+        "description": "rectangle",
+        "isExtraImport": true,
+        "detail": "rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
         "importPath": "models.rectangle",
         "description": "models.rectangle",
         "isExtraImport": true,
@@ -79,6 +95,15 @@
         "description": "models.rectangle",
         "peekOfCode": "class Rectangle(Base):\n    \"\"\"\n    Rectangle class\n    \"\"\"\n    def __init__(self, width, height, x=0, y=0, id=None):\n        \"\"\"\n        Constructor\n        \"\"\"\n        super().__init__(id)\n        self.width = width",
         "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
+        "importPath": "models.square",
+        "description": "models.square",
+        "peekOfCode": "class Square(Rectangle):\n    \"\"\"\n    class square\n    \"\"\"\n    def __init__(self, size, x=0, y=0, id=None):\n        \"\"\"\n        Constructor\n        \"\"\"\n        super().__init__(id, x, y, size, size)\n        self.size = size",
+        "detail": "models.square",
         "documentation": {}
     }
 ]
