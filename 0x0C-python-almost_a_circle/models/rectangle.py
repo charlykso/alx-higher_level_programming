@@ -112,6 +112,32 @@ class Rectangle(Base):
             for row in range(self.width):
                 print('#', end='')
             print()
+    
+    def update(self, *args, **kwargs):
+        """
+        update the class variables
+        """
+        argc = len(args)
+        if argc > 0:
+            try:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+                self.y = args[4]
+            except:
+                pass
+        else:
+            if 'id' in kwargs:
+                self.id = kwargs['id']
+            if 'width' in kwargs:
+                self.width = kwargs['width']
+            if 'height' in kwargs:
+                self.height = kwargs['height']
+            if 'x' in kwargs:
+                self.x = kwargs['x']
+            if 'y' in kwargs:
+                self.y = kwargs['y']            
 
     def __str__(self):
         """
