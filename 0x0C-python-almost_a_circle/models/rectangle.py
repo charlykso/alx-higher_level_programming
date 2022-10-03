@@ -45,12 +45,13 @@ class Rectangle(Base):
                 height getter
                 """
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """
-		height setter
-		"""
+        height setter
+        """
+
         if type(value) is not int:
             raise TypeError('height must be an integer')
         if value <= 0:
@@ -98,7 +99,7 @@ class Rectangle(Base):
         returns the area of the rectangle
         """
         return self.width * self.height
-    
+
     def display(self):
         """
         prints rectangle with # to the console
@@ -111,3 +112,10 @@ class Rectangle(Base):
             for row in range(self.width):
                 print('#', end='')
             print()
+
+    def __str__(self):
+        """
+        the string method
+        """
+        return ('[Rectangle] ({}) {}/{} - {}/{}'.format(
+            self.id, self.x, self.y, self.width, self.height))
