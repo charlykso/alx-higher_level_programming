@@ -42,11 +42,27 @@
         "documentation": {}
     },
     {
-        "label": "Rectangle",
-        "importPath": "models.rectangle",
-        "description": "models.rectangle",
+        "label": "Base",
+        "importPath": "models.base",
+        "description": "models.base",
         "isExtraImport": true,
-        "detail": "models.rectangle",
+        "detail": "models.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "models.base",
+        "description": "models.base",
+        "isExtraImport": true,
+        "detail": "models.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "models.base",
+        "description": "models.base",
+        "isExtraImport": true,
+        "detail": "models.base",
         "documentation": {}
     },
     {
@@ -151,6 +167,47 @@
         "description": "models.rectangle",
         "isExtraImport": true,
         "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
         "documentation": {}
     },
     {
@@ -175,6 +232,39 @@
         "description": "models.square",
         "isExtraImport": true,
         "detail": "models.square",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "importPath": "models.square",
+        "description": "models.square",
+        "isExtraImport": true,
+        "detail": "models.square",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "importPath": "models.square",
+        "description": "models.square",
+        "isExtraImport": true,
+        "detail": "models.square",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "importPath": "models.square",
+        "description": "models.square",
+        "isExtraImport": true,
+        "detail": "models.square",
+        "documentation": {}
+    },
+    {
+        "label": "pep8",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pep8",
+        "description": "pep8",
+        "detail": "pep8",
         "documentation": {}
     },
     {
@@ -202,6 +292,33 @@
         "description": "models.square",
         "peekOfCode": "class Square(Rectangle):\n    '''\n    Square class inherits from Rectangle\n    '''\n    def __init__(self, size, x=0, y=0, id=None):\n        '''\n        Constructor\n        '''\n        super().__init__(size, size, x, y, id)\n        self.size = size",
         "detail": "models.square",
+        "documentation": {}
+    },
+    {
+        "label": "TestBaseClass",
+        "kind": 6,
+        "importPath": "tests.test_models.test_base",
+        "description": "tests.test_models.test_base",
+        "peekOfCode": "class TestBaseClass(unittest.TestCase):\n    '''\n    =========================\n    Setup and style tests\n    =========================\n    '''\n    @classmethod\n    def setUp(self):\n        Base._Base__nb_objects = 0\n        pass",
+        "detail": "tests.test_models.test_base",
+        "documentation": {}
+    },
+    {
+        "label": "TestRectangleClass",
+        "kind": 6,
+        "importPath": "tests.test_models.test_rectangle",
+        "description": "tests.test_models.test_rectangle",
+        "peekOfCode": "class TestRectangleClass(unittest.TestCase):\n    @classmethod\n    def setUp(cls):\n        Base._Base__nb_objects = 0\n        cls.rect1 = Rectangle(2, 4)\n        cls.rect2 = Rectangle(2, 4, 6)\n        cls.rect2 = Rectangle(2, 4, 6, 8)\n        cls.rect2 = Rectangle(2, 4, 6, 8, 10)\n    @classmethod\n    def tearDownClass(self):",
+        "detail": "tests.test_models.test_rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "TestSquareClass",
+        "kind": 6,
+        "importPath": "tests.test_models.test_square",
+        "description": "tests.test_models.test_square",
+        "peekOfCode": "class TestSquareClass(unittest.TestCase):\n    @classmethod\n    def setUp(cls):\n        Base._Base__nb_objects = 0\n        cls.sqr1 = Square(2, 4)\n        cls.sqr2 = Square(2, 4, 6)\n        cls.sqr3 = Square(2, 4, 6, 8)\n        cls.sqr4 = Square(2, 4, 8, 10)\n    @classmethod\n    def tearDownClass(self):",
+        "detail": "tests.test_models.test_square",
         "documentation": {}
     }
 ]
