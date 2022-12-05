@@ -18,8 +18,8 @@ if __name__ == "__main__":
     cur.execute("SELECT cities.name \
                  FROM states \
                  INNER JOIN cities ON states.id = cities.state_id \
-                 WHERE states.name LIKE %s GROUP BY cities.name\
-                 ORDER BY cities.id ASC""", (argv[4],))
+                 WHERE states.name=%s\
+                 ORDER BY cities.id ASC;", (argv[4],))
     query_row = cur.fetchall()
     print(', '.join(["{:s}".format(city[0]) for city in query_row]))
     cur.close()
