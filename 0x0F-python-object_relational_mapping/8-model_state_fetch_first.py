@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 """
-script that lists all State objects
-from the database hbtn_0e_6_usa
+script that prints the first State
+object from the database hbtn_0e_6_usa
 """
 
 from sys import argv
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     session = Session()
 
     # query the database
-    for state in session.query(State).order_by(State.id):
-        print("{}: {}".format(state.id, state.name))
+    state = session.query(State).order_by(State.id).first()
+    print("{}: {}".format(state.id, state.name))
 
     session.close()
