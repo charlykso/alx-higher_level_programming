@@ -17,7 +17,7 @@ if __name__ == '__main__':
     """
     make engine
     """
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.
                            format(user, passwd, db), pool_pre_ping=True)
     # make a session
     Session = sessionmaker(bind=engine)
