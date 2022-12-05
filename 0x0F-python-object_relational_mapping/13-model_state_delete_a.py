@@ -24,10 +24,9 @@ if __name__ == '__main__':
     # create an instance of the Session
     session = Session()
 
-    # query the database to add new state
-    new_state = State(name='Louisiana')
-    session.add(new_state)
-    session.commit()
-    print('{}'.format(new_state.id))
+    # query the database to delete state
+    state_del = session.query(State).filter(State.name.like('%a%')).all()
+    for state in state_del:
+        session.delete(state)
 
     session.commit()

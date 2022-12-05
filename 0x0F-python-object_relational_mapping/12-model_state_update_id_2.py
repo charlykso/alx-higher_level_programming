@@ -27,4 +27,4 @@ if __name__ == '__main__':
     # query the database to edit state with id == 2
     session.query(State).filter(State.id == 2).update({'name': 'New Mexico'})
 
-    session.close()
+    session.commit()
