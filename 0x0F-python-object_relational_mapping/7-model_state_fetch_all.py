@@ -25,7 +25,7 @@ if __name__ == '__main__':
     session = Session()
 
     # query the database
-    for state in session.query(State).order_by(State.id).group_by(State.name):
+    for state in session.query(State).order_by(State.id):
         print("{:d}: {:s}".format(state.id, state.name))
 
     session.close()
