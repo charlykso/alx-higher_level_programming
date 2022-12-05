@@ -22,12 +22,11 @@ if __name__ == '__main__':
                            format(user, passwd, db), pool_pre_ping=True)
     # make session
     Session = sessionmaker(bind=engine)
-    #create instance of session
+    # create instance of session
     session = Session()
 
     # query the db
-    states = session.query(State).order_by(State.id)
-    for state in states:
+    for state in session.query(State).order_by(State.id):
         print('{}: {}'.format(state.id, state.name))
         for city in state.cities:
             print('\t{}: {}'.format(city.id, city.name))
