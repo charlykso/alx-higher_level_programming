@@ -19,6 +19,6 @@ request.get(url, function (err, res, data) {
     }
     console.log(dic);
   } else {
-    console.log('Error code: ' + response.statusCode);
+    console.log('Error code: ' + res.statusCode);
   }
 });
